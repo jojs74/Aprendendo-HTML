@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>&lt;Tag aside&gt;</title>
+
+    <style type="text/css">  /* FORMATAÇÃO TEXTO/CSS */ 
+
+        p{font-size: 20px; color: rgb(221, 138, 30);} /*Formatando a fonte <p>*/
+        li {font-size: 20px;  color: red;}
+        h2{text-align: center;}  /*Formatando a fonte <h2>*/
+        h3{color: mediumblue;}
+
+        a{
+            font-size: 30px; 
+            color: rgb(29, 199, 114);
+            
+        }
+
+        article{
+            border: 4px solid red;
+            border-radius: 10px;
+            background-color: slategrey;
+            width: 150px;
+            height: 30px;
+            padding: 20px;
+            text-align: center;
+            margin:auto;
+            
+            
+        }
+
+        aside{
+            border: 4px solid rgb(201, 178, 52); /* Larg. e cor da borda */
+
+            padding: 15px; /* Altera o tamanho do container vert. e horiz. s/ afetar a fonte */
+
+            border-radius: 10px;  /* Deixando bordas arredondadas */
+
+            background-color: rgb(30, 36, 36); /* Cor fundo do container*/
+
+            color: cornsilk; /* Cor da fonte do container*/
+
+            width: 300px;  /* Formata o container na horizontal (Largura)*/
+
+            height:900px;  /* Formata o container na vertical (Altura) */
+
+            /*float: left; //colocar o container ou texto á esquerda*/
+
+             /*float: right; //coloca o container ou texto á direita*/
+
+            /*float: center; //colocar o container ou texto no centro*/
+        }
+
+
+        .esquerda{float: left; margin-right: 30px;} /* Trabalhando c/ Classe  */
+        .direita{float: right; margin-left: 30px;}
+
+        .centro{float:left;}
+
+    </style>
+
+</head>
+<body>
+
+    <h2>Pra que que serve &lt;aside&gt; &lt;/aside&gt; ? </h2>
+    <aside class="esquerda">
+
+        <p>Ele vai representar uma seção dentro da página, que vai ter um conteúdo diretamente relacionado ao conteúdo principal da página.</p>
+        <p> Ou onde esse aside está posicionado! ele pode estar posicionado no meio de um conteúdo.</p> <p>Normalmente ele é disposto, a tipográfia dele é disposta como uma cx lateral, mas isso não é uma obrigatoriedade </p>
+
+        <p>O elemento ao lado representa uma seção de uma página que consiste em um conteúdo tangencialmente relacionado ao conteúdo ao redor do elemento ao lado e que pode ser considerado separado desse conteúdo.</p>
+        <p>Essas seções são frequentemente representadas como barras laterais na tipografia impressa.
+        </p> 
+        <p>O elemento pode ser usado para efeitos tipográficos, como citações ou barras laterais, para publicidade, para grupos de elementos de navegação e para outro conteúdo considerado separado do conteúdo principal da página, comentários referente ao conteúdo principal.</p>
+
+
+    </aside>
+
+    <aside class="direita">
+
+        <h2>Características:</h2>
+        <ul>
+            
+            <li>Display: Block</li>
+            <li>Categoria: Fluxo e Seção</li>
+            <li>Contido por:Fluxo</li>
+            <li>Filhos: Todos os elementos de Fluxo(h, p, tags do body)</li>
+            <li>Pode conter tds elementos de fluxo:h, p, nav, links, listas,etc..</li>
+            <li>DOM Inteface: Uses HTMLElement</li>
+            <li>Trabalha c/ os atributod globais</li>
+            <li>Pode contar tb um elemento de navegação da página, diferente do elemento principal!</li>
+            <li>Dentro de aside posso ter um &lt;nav&gt;, um menu por exemplo. Que vai ser diferente do menu principal da página</li>
+            <li>Eu posso usar &lt;aside&gt; quando eu quiser relacionar uma explicação de parte de um texto,Quando precisar colocar uma citação.</li>
+            <li>É considerado de forma separado do conteúdo principal</li>
+            <li>Ele não faz parte de fluxo do conteúdo principal. Serve p/ fazer uma explicação, nota, citação relacionando a esse conteúdo ou partes que precisam de explicação do conteúdo principal. </li>
+            <li>Pode ser uma barra lateral, cx lateral, para propagandas, para grupos de elementos de navegação(nave) como um menu secundário.</li>
+    
+        </ul>
+    </aside>
+
+        <h3>Ele vai representar uma seção dentro da página, que vai ter um conteúdo diretamente relacionado ao conteúdo principal da página. Ou onde esse aside está posicionado! ele pode estar posicionado no meio de um conteúdo. </h3> 
+        <h3>Normalmente ele é disposto, a tipográfia dele é disposta como uma cx lateral, mas isso não é uma obrigatoriedade </h3>
+        <h3>O elemento ao lado representa uma seção de uma página que consiste em um conteúdo tangencialmente relacionado ao conteúdo ao redor do elemento ao lado e que pode ser considerado separado desse conteúdo.</h3>
+        <h3>Essas seções são frequentemente representadas como barras laterais na tipografia impressa.
+        </h3> 
+        <h3>O elemento pode ser usado para efeitos tipográficos, como citações ou barras laterais, para publicidade, para grupos de elementos de navegação e para outro conteúdo considerado separado do conteúdo principal da página, comentários referente ao conteúdo principal.</h3>
+
+    <article class="centro">
+        <a href="http://google.com.br" target="_blank">google</a>
+    </article>
+
+    
+   
+
+</body>
+</html>

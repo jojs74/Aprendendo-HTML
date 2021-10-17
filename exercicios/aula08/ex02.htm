@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>&lt;div&gt;</title>
+
+    <style>
+        .article { /*Formatação no container div classe = " article ", no caso aqui, é em tds os containers article */
+
+            padding: 15px; /* Altera o tamanho do container */
+            border: 2px solid black; /*border = largura com 2px, solod:black - a cor da borda*/
+            border-radius: 15px;  /* bordas arredondadas */
+            background-color:rgb(166, 173, 173); /* Cor de fundo do container article */
+            margin-bottom: 10px; /* Essa é p/ dar um espaçamento entre os containers */
+        }
+        .article h1{
+            color: crimson;
+
+        }
+
+        /* h1 fora da classe .article, fora do container da DIV */
+        h1{ 
+            color: darkblue;
+        }
+               
+        /* h2 fora da classe .article, fora do container da DIV */
+        h2{     
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Antiga semantica div, agora usa-se a nova semantica tag: <u>article</u> (é um container)</h1>
+
+    <h2>A <u> article</u> era uma classe da tag &lt;div&gt; Ex:</h2>
+
+    <h3>&lt; div class = "article" &gt;</h3>
+
+    <div class="article">
+        <h1>Curso CFB</h1>
+        <P>Canal de cursos gratuitos no Youtube</P>
+    </div>
+
+    <div class="article">
+        <h1>CFB Cursos</h1>
+        <p>Curos gratuitos de HTML</p>
+    </div>
+    
+    <div class="article">
+        <h1>CURSOS DISPONÍVEIS</h1>
+        <P>HTML5</P>
+        <P>CSS</P>
+        <P>Javascript</P>
+        <P>C++</P>
+        <P>PHP / MYSQL</P>
+        <P>Unity / C#</P>
+        <P>PHOTOSHOP</P>
+        <p>Flash</p>
+        <p>ARDUINO</p>
+    </div>
+
+    <div class="article">
+        <p>A facilidade de usar o article é a ORGANIZAÇÃO e a FORMATAÇÃO</p>
+
+    </div>
+
+    <h1>Estes estão fora do container article</h1>
+
+    <h2>Aprendendo sobre container: article</h2>
+
+    <p>O article tem a msm função do div</p>
+
+
+
+
+
+</body>
+</html>

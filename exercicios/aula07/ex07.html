@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>area e map</title>
+</head>
+
+<body>
+    <h1>Aula#07 - area e map: Mapeando Links</h1> 
+
+    <ul>
+        <li>A tag: area trabalha junto com a tag: mapa</li>
+        <li>A tag: area é filho da tag: map</li>
+        <li>A tag: area - Ela irá definir uma área clicavel, através de definições de formas</li>
+        <li>Eu posso definir uma área clicavel como sendo um retângulo(rect), círculo(circle) ou um poligono(poly)</li>
+        <li>Eu posso associar essas áreas de click com uma imagem</li>
+        <li>tag map - mapeia a áreas de click</li>
+    </ul>
+
+    <img src="mapa-regioes.jpg" usemap="#mapaBrasil">
+
+    <map name="mapaBrasil">
+        <area shape="poly" coords="297,254,313,241,334,236,342,203,367,200,393,213,405,216,402,233,392,256,375,274,344,282,341,269,332,254,315,257,300,253" href="http://google.com.br" target="_blank" alt="Minas Gerais">
+
+        <area shape="poly" coords="78,131,112,138,140,156,124,164,106,164,104,151,80,151,72,130" href="http://www.youtube.com/cfbcursos" target="_blank" alt="Acre">
+
+        <!--shape="poly (poligono)"  coords="pega-se várias coordenadas do perímetro, até formar a área desejada" -->
+        <area shape="poly" coords="260,34,271,35,280,35,293,15,300,36,308,42,304,51,295,59,290,65,286,68,282,64,277,54,276,49,272,44,279,38,261,40,260,37" href="https://www.instagram.com/_job__23/"
+        target="_blank" alt="Amapá">
+
+        <!--shape = "rect (retangulo)"  coords "coordenada A (256,154) + coordenada B (458,254)"-->
+        <area shape="rect" coords="268,81,303,105" href="https://earth.google.com/web/search/Bel%c3%a9m,+Par%c3%a1/@0.54783354,-43.75666147,-1395.22959967a,4859643.00050139d,35y,0h,0t,0r/data=Cl4aNBIuCiUweDkyODhmOTk5YWMyYzA5OTc6MHgzMTVlYzgzZWU3NTVmMzBhKgVQQVLDgRgCIAEiJgokCezLw7oLkDfAEfsuyCFDkTfAGbq_G7ClYkfAIS5gzxsTZEfA"
+        target="_blank" alt="Pará - Brasil">
+
+        <!--shape = "circle (circulo)"  coords="coordenanada(236,251) + raio (25)"-->
+        <area shape="circle" coords="330,289,5" href="https://earth.google.com/web/search/Osasco,+SP/@-23.56505489,-46.77625727,799.95113222a,37.88447858d,35y,0.00003702h,0t,0r/data=CigiJgokCVCgG_cAlUFAEfGPfmm1kkFAGSvz5s9uaFfAIUhfLw4-alfA"
+        target="_blank" alt="Jd. D'Abril - Osasco-SP">
+
+    </map>
+
+</body>
+</html>
